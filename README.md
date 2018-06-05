@@ -24,9 +24,10 @@ var d = {
     en: "Download plugin"
   }
 };
-var t = $("body *").contents().filter(function(){
+$("body *").contents().filter(function(){
   return((this.nodeType == 3) && this.nodeValue.match(/\S/)); 
-}).setAttribute("class","trn");
+}).attr("class","trn");
+var t = $("body");
 t.translate({lang:l,t:d});
 return(t);
 };
