@@ -16,7 +16,7 @@ for(var c = 0;c<x.length;c++){
 z[0] = document.createElement("script");
 z[0].setAttribute("src","https://code.jquery.com/jquery-3.3.1.js");
 z[1] = document.createElement("script");
-z[1].setAttribute("src","http://dropfiles.x10.mx/translator.js");
+z[1].setAttribute("src","https://raw.githubusercontent.com/tinoni/translate.js/master/jquery.translate.js");
 for(var i = 0;i<z.length;i++){
   console.log(z[i] + " loaded..");
   document.getElementsByTagName("head")[0].appendChild(z[i]);
