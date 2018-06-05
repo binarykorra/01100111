@@ -16,7 +16,7 @@ var dict = {
     fi: "Magagamit"
   }
 };
-var translator = document.body.translate({lang:language,t:dict});
+var translator = document.getElementsByTagName("body")[0].translate({lang:language,t:dict});
 return(translator);
 };
 zero().lang("fi");
