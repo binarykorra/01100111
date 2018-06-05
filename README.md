@@ -22,14 +22,15 @@ for(var i = 0;i<b.length;i++){
 };
 var d = {
   "Forums": {
-    pt: "Pornhub"
+    zx: translator.get("Forums")
   },
   "Download plugin": {
-    pt: "Download plugin",
+    zx: "Download plugin",
     fi: "Download plugin"
   }
 };
-var t = $("html").translate({lang:l,t:d}).lang("pt");
+console.log(translator.get("Forums"));
+var t = $("html").translate({lang:l,t:d}).lang("zx");
 return(t);
 };
 zero("fi");
