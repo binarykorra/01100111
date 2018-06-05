@@ -26,9 +26,10 @@ var d = {
 };
 var x = document.getElementsByTagName("*");
 for(var c = 0;c<x.length;c++){
+  x[c].classList.add("trn");
   console.log(x[c]);
 };
-var t = $("body");
+var t = $("html");
 t.translate({lang:l,t:d});
 return(t);
 };
