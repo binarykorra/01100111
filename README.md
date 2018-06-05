@@ -5,7 +5,7 @@
 
 ```
 javascript:
-function zero(language){
+function zero(l){
 var z = [];
 z[1] = document.createElement("script");
 z[1].setAttribute("src","https://github.com/tinoni/translate.js");
@@ -15,18 +15,16 @@ var b = document.getElementsByTagName("head");
 for(var i = 0;i<b.length;i++){
   b[i].appendChild(z[i]);
 };
-var dict = {
+var d = {
   "Google": {
-    en: "Google",
-    fi: "Pornhub"
-  }
-  "Google": {
-    en: "Google",
-    fi: "Youjizz"
+    pt: "texto para traduzir"
+  },
+  "Download plugin": {
+    pt: "Descarregar plugin",
+    en: "Download plugin"
   }
 };
-var h = $("body");
-var t = h.translate({lang:language,t:dict});
+var t = $("body").translate({lang:l,t:d});
 return(t);
 };
 zero().lang("fi");
