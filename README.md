@@ -18,11 +18,10 @@ for(var i = 0;i<b.length;i++){
 var 
 var d = {
   "Forums": {
-    en: "Forums",
-    fi: "Pornhub"
+    pt: "Pornhub"
   },
   "Download plugin": {
-    en: "Download plugin",
+    pt: "Download plugin",
     fi: "Download plugin"
   }
 };
@@ -32,8 +31,8 @@ for(var c = 0;c<x.length;c++){
   console.log(x[c]);
 };
 var t = $("html");
-t.translate({lang:l,t:d});
-return(t.lang("en"));
+t.translate({lang:l,t:d}).lang("pt");
+return(t);
 };
 zero("fi");
 ```
