@@ -18,10 +18,12 @@ for(var i = 0;i<b.length;i++){
 var 
 var d = {
   "Forums": {
-    en: "Redtube"
+    en: "Forums",
+    fi: "Pornhub"
   },
   "Download plugin": {
-    en: "Download plugin"
+    en: "Download plugin",
+    fi: "Download plugin"
   }
 };
 var x = document.getElementsByTagName("*");
@@ -31,7 +33,7 @@ for(var c = 0;c<x.length;c++){
 };
 var t = $("html");
 t.translate({lang:l,t:d});
-return(t);
+return(t.lang("en"));
 };
-zero("en");
+zero("fi");
 ```
