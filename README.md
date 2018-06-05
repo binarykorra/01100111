@@ -22,16 +22,12 @@ for(var i = 0;i<z.length;i++){
 };
 var d = {
   "Forums": {
-    zx: translator.get("Forums")
-  },
-  "Download plugin": {
-    zx: "Download plugin",
-    fi: "Download plugin"
+    pt: "Pornhub",
+    en: "Pornhub"
   }
 };
-console.log(translator.get("Forums"));
-var t = $("html").translate({lang:l,t:d}).lang("zx");
+var t = $("body").translate({lang:l,t:d});
 return(t);
 };
-zero("fi");
+zero("en");
 ```
