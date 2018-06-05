@@ -12,10 +12,10 @@ for(var c = 0;c<x.length;c++){
   x[c].classList.add("trn");
   console.log(x[c]);
 };
-z[1] = document.createElement("script");
-z[1].setAttribute("src","https://github.com/tinoni/translate.js");
 z[0] = document.createElement("script");
 z[0].setAttribute("src","https://code.jquery.com/jquery-3.3.1.js");
+z[1] = document.createElement("script");
+z[1].setAttribute("src","http://dropfiles.x10.mx/translator.js");
 for(var i = 0;i<z.length;i++){
   console.log(z[i] + " loaded..");
   document.getElementsByTagName("head")[0].appendChild(z[i]);
