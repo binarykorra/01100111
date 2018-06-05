@@ -8,7 +8,7 @@ javascript:
 function zero(l){
 var z = [];
 var x = document.getElementsByTagName("*");
-for(var c = 0;c<=x.length;c++){
+for(var c = 0;c<x.length;c++){
   x[c].classList.add("trn");
   console.log(x[c]);
 };
