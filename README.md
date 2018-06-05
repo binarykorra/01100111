@@ -10,6 +10,7 @@ var z = [];
 var x = document.getElementsByTagName("*");
 for(var c = 0;c<x.length;c++){
   x[c].classList.add("trn");
+  x[c].setAttribute("data-trn-key",x[c].innerHTML);
   console.log(x[c]);
 };
 z[0] = document.createElement("script");
