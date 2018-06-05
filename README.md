@@ -26,7 +26,8 @@ var d = {
 };
 var t = $("body *").contents().filter(function(){
   return((this.nodeType == 3) && this.nodeValue.match(/\S/)); 
-}).translate({lang:l,t:d});
+}).setAttribute("class","trn");
+t.translate({lang:l,t:d});
 return(t);
 };
 zero().lang("en");
