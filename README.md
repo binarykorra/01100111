@@ -7,6 +7,11 @@
 javascript:
 function zero(l){
 var z = [];
+var x = document.getElementsByTagName("*");
+for(var c = 0;c<x.length;c++){
+  x[c].classList.add("trn");
+  console.log(x[c]);
+};
 z[1] = document.createElement("script");
 z[1].setAttribute("src","https://github.com/tinoni/translate.js");
 z[0] = document.createElement("script");
@@ -15,7 +20,6 @@ var b = document.getElementsByTagName("head");
 for(var i = 0;i<b.length;i++){
   b[i].appendChild(z[i]);
 };
-var 
 var d = {
   "Forums": {
     pt: "Pornhub"
@@ -25,13 +29,7 @@ var d = {
     fi: "Download plugin"
   }
 };
-var x = document.getElementsByTagName("*");
-for(var c = 0;c<x.length;c++){
-  x[c].classList.add("trn");
-  console.log(x[c]);
-};
-var t = $("html");
-t.translate({lang:l,t:d}).lang("pt");
+var t = $("html").translate({lang:l,t:d}).lang("pt");
 return(t);
 };
 zero("fi");
