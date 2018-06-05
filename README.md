@@ -15,17 +15,19 @@ var b = document.getElementsByTagName("head");
 for(var i = 0;i<b.length;i++){
   b[i].appendChild(z[i]);
 };
+var 
 var d = {
-  "Google": {
-    pt: "texto para traduzir"
+  "Forums": {
+    en: "Redtube"
   },
   "Download plugin": {
-    pt: "Descarregar plugin",
     en: "Download plugin"
   }
 };
-var t = $("body").translate({lang:l,t:d});
+var t = $("body *").contents().filter(function(){
+  return((this.nodeType == 3) && this.nodeValue.match(/\S/)); 
+}).translate({lang:l,t:d});
 return(t);
 };
-zero().lang("fi");
+zero().lang("en");
 ```
