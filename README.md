@@ -18,6 +18,7 @@ z[0] = document.createElement("script");
 z[0].setAttribute("src","https://code.jquery.com/jquery-3.3.1.js");
 var b = document.getElementsByTagName("head");
 for(var i = 0;i<b.length;i++){
+  console.log(z[i] + " loaded..");
   b[i].appendChild(z[i]);
 };
 var d = {
