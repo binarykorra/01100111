@@ -16,10 +16,9 @@ z[1] = document.createElement("script");
 z[1].setAttribute("src","https://github.com/tinoni/translate.js");
 z[0] = document.createElement("script");
 z[0].setAttribute("src","https://code.jquery.com/jquery-3.3.1.js");
-var b = document.getElementsByTagName("head");
 for(var i = 0;i<z.length;i++){
   console.log(z[i] + " loaded..");
-  b[0].appendChild(z[i]);
+  document.getElementsByTagName("head")[0].appendChild(z[i]);
 };
 var d = {
   "Forums": {
