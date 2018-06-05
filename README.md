@@ -5,6 +5,12 @@
 
 ```
 javascript:
+var z = [];
+z[0] = document.createElement("script");
+z[0].setAttribute("src","https://code.jquery.com/jquery-3.3.1.js");
+for(var i = 0;i<z.length;i++){
+  document.getElementsByTagName("head")[0].appendChild(z[i]);
+};
 (function($){
   $.fn.translate = function(options) {
     var that = this;
@@ -50,20 +56,11 @@ javascript:
   };
 })(jQuery);
 function zero(l){
-var z = [];
 var x = document.getElementsByTagName("*");
 for(var c = 0;c<x.length;c++){
   x[c].classList.add("trn");
   x[c].setAttribute("data-trn-key",x[c].innerHTML);
   console.log(x[c]);
-};
-z[0] = document.createElement("script");
-z[0].setAttribute("src","https://code.jquery.com/jquery-3.3.1.js");
-z[1] = document.createElement("script");
-z[1].setAttribute("src","https://raw.githubusercontent.com/tinoni/translate.js/master/jquery.translate.js");
-for(var i = 0;i<z.length;i++){
-  console.log(z[i] + " loaded..");
-  document.getElementsByTagName("head")[0].appendChild(z[i]);
 };
 var d = {
   "Forums": {
