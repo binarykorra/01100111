@@ -31,5 +31,5 @@ var t = $("body");
 t.translate({lang:l,t:d});
 return(t);
 };
-zero().lang("en");
+zero("en");
 ```
