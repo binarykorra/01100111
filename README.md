@@ -16,17 +16,17 @@ for(var i = 0;i<b.length;i++){
   b[i].appendChild(z[i]);
 };
 var dict = {
-  "Home": {
-    pt: "Início"
-  },
-  "Download plugin": {
-    ru: "Usage",
-    fi: "Magagamit"
+  "Google": {
+    en: "Google",
+    fi: "Pornhub"
+  }
+  "Google": {
+    en: "Google",
+    fi: "Youjizz"
   }
 };
-var h = $("html");
+var h = $("body");
 var t = h.translate({lang:language,t:dict});
-alert(t);
 return(t);
 };
 zero().lang("fi");
